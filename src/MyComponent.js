@@ -14,9 +14,9 @@ export default class MyComponent extends Component {
       <div className="my-component-container">
         <h2>My Component</h2>
         {letters.map((letter, i) => {
-          <div key={i}>
+          return(<div key={i}>
             {letter}
-          </div>
+          </div>)
         })}
       </div>
     );
